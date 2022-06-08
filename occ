@@ -1,0 +1,5 @@
+for i in `find ../yt/down|grep mp3`
+do
+echo $i
+./readbloc /dev/sdb $i out 3
+done
